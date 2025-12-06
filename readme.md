@@ -56,17 +56,23 @@ pip install -r requirements.txt
 Edit `config.py` and fill in your API keys:
 
 ```python
-QWEN_CONFIG = {
-    'api_key': 'YOUR_DASHSCOPE_API_KEY',  # Alibaba Cloud Qwen API key
-    'model': 'qwen-max',
-    'temperature': 0.7
-}
-
-DOUBAO_CONFIG = {
-    'api_key': 'YOUR_VOLCENGINE_API_KEY',  # ByteDance Doubao API key
-    'endpoint_id': 'YOUR_ENDPOINT_ID',
-    'model': 'doubao-pro',
-    'temperature': 0.7
+MODELS = {
+    'ds3': {
+        'model_name': 'deepseek-v3',
+        'temperature': 0.4,
+        'max_tokens': 4000
+    }
+MODELS = {
+    'qwen': {
+        'model_name': 'Qwen3-32B',
+        'temperature': 0.4,
+        'max_tokens': 4000
+    },
+    'GLM': {
+        'model_name': 'GLM-4.5',
+        'temperature':0.4,
+        'max_tokens': 4000
+    }
 }
 ```
 
@@ -117,6 +123,7 @@ python wuxi_policy_wordcloud.py
 | Named Entity Recognition | DeepSeek | 
 | Relationship Extraction | Glm-4.5 + DeepSeek + Qwen| 
 | Triple Evaluation | Qwen | 
+
 
 
 
