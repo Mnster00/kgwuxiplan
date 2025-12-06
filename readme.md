@@ -62,7 +62,6 @@ MODELS = {
         'temperature': 0.4,
         'max_tokens': 4000
     }
-MODELS = {
     'qwen': {
         'model_name': 'Qwen3-32B',
         'temperature': 0.4,
@@ -123,6 +122,7 @@ python wuxi_policy_wordcloud.py
 | Named Entity Recognition | DeepSeek | 
 | Relationship Extraction | Glm-4.5 + DeepSeek + Qwen| 
 | Triple Evaluation | Qwen | 
+
 
 
 
