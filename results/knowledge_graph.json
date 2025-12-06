@@ -42074,24 +42074,5 @@
       "relation": "承载",
       "type": "development"
     }
-  ],
-  "stats": {
-    "nodes": 2850,
-    "edges": 5116,
-    "entity_types": {
-      "location": 914,
-      "concept": 1554,
-      "land_use": 225,
-      "indicator": 50,
-      "facility": 107
-    },
-    "relation_types": {
-      "explanation": 3120,
-      "development": 1158,
-      "conservation": 412,
-      "regulation": 297,
-      "restriction": 127,
-      "indicator": 2
-    }
-  }
+  ]
 }
